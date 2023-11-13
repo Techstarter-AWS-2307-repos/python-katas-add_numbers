@@ -24,5 +24,8 @@ jobs:
 
       - name: Grade Code Style
         run: python unittests/grade.py
+
+      - name: Copy Unittests
+        run: cp unittests/* .
   
       - uses: education/autograding@v1
