@@ -3,7 +3,7 @@
     {
       "name": "Test if File exists",
       "setup": "",
-      "run": "python -m unittest unittests.test_add_numbers.TestAddTwoNumbers.test_file_exists",
+      "run": "python -m unittest unittests.test_add_numbers.Test.test_file_exists",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -13,7 +13,7 @@
     {
       "name": "Test add Numbers Function",
       "setup": "",
-      "run": "python -m unittest unittests.test_add_numbers.TestAddTwoNumbers.test_file_exists",
+      "run": "python -m unittest unittests.test_add_numbers.Test.test_addition",
       "input": "",
       "output": "",
       "comparison": "included",
