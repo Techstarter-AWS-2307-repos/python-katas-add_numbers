@@ -11,7 +11,7 @@ jobs:
       - name: Checkout Unittests
         uses: actions/checkout@v2
         with:
-          repository: 'Techstarter-AWS-2307-repos/_classroom_unit_tests'
+          repository: 'helsoc7/_classroom_unit_tests'
           path: unittests
           ref: 'main' 
       - name: Set up Python
@@ -22,10 +22,10 @@ jobs:
       - name: Install Flake8
         run: pip install flake8
 
-      - name: Grade Code Style
-        run: python unittests/grade.py
-
       - name: Copy Unittests
         run: cp unittests/* .
-  
+
+      - name: Grade Code Style
+        run: python grade.py
+
       - uses: education/autograding@v1
